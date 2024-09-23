@@ -4,7 +4,7 @@ const button = document.getElementById('btn');
 const spinner = document.getElementById('spinner');
 
 async function query(input) {
-    const response = await fetch('http://localhost:5000/generate-image', {
+    const response = await fetch('https://text-to-image-app-backend.vercel.app/generate-image', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
